@@ -1,9 +1,8 @@
-
 import streamlit as st
 import pandas as pd
-import pickle
+import joblib
 
-model = pickle.load(open("model.pkl", "rb"))
+model = joblib.load("model.joblib")
 
 st.title("Vehicle Insurance Fraud Detection")
 
